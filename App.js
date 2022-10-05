@@ -14,6 +14,10 @@ export default function App() {
           </Text>
         </View>
       </View>
+      <View style={styles.content}>
+        <Text style={styles.contentText}>Mi nombre es Gabriel Alejandro Depool Martínez, en la actualidad soy estudiante en un ciclo formativo de grado superior en Salesianos La Cuesta.
+          Disfruto mucho de mi tiempo libre ya que me permite estar despejado, hago deporte y soy una persona extrovertida.</Text>
+      </View>
     </>
   );
 }
@@ -54,5 +58,15 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end ', 
     paddingRight: 12,
     paddingLeft: 10
+  },
+
+  content: {
+    flex: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  
+  contentText: {
+    margin: 20,
   },
 });
