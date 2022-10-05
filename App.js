@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
+import QRCode from 'react-native-qrcode-svg';
 
 export default function App() {
   return (
@@ -17,6 +18,9 @@ export default function App() {
       <View style={styles.content}>
         <Text style={styles.contentText}>Mi nombre es Gabriel Alejandro Depool Martínez, en la actualidad soy estudiante en un ciclo formativo de grado superior en Salesianos La Cuesta.
           Disfruto mucho de mi tiempo libre ya que me permite estar despejado, hago deporte y soy una persona extrovertida.</Text>
+      </View>
+      <View style={styles.qr}>
+        <QRCode value="https://github.com/ElCeacker"/>
       </View>
     </>
   );
@@ -69,4 +73,12 @@ const styles = StyleSheet.create({
   contentText: {
     margin: 20,
   },
+
+  qr: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: 25,
+    
+  }
 });
